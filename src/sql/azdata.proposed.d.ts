@@ -310,6 +310,12 @@ declare module 'azdata' {
 
 	export interface ConnectionOption {
 		defaultValueOsOverrides?: DefaultValueOsOverride[];
+		/**
+		 * Whether the option can be configured when making connection.
+		 * If the value is false, the option won't show up in the connection dialog.
+		 * The default value is true.
+		 */
+		configurableOnConnect?: boolean;
 	}
 
 	export interface ModelBuilder {

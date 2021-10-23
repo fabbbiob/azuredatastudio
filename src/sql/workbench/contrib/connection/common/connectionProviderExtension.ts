@@ -131,6 +131,9 @@ const ConnectionProviderContrib: IJSONSchema = {
 					},
 					isArray: {
 						type: 'boolean'
+					},
+					configurableOnConnect: {
+						type: 'boolean'
 					}
 				}
 			}

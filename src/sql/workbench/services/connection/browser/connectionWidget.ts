@@ -121,7 +121,9 @@ export class ConnectionWidget extends lifecycle.Disposable {
 		this._optionsMaps = {};
 		for (let i = 0; i < options.length; i++) {
 			let option = options[i];
-			this._optionsMaps[option.specialValueType] = option;
+			if (option.configurableOnConnect !== false) {
+				this._optionsMaps[option.specialValueType] = option;
+			}
 		}
 
 		let authTypeOption = this._optionsMaps[ConnectionOptionSpecialType.authType];
