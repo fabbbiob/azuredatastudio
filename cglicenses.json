@@ -9,6 +9,7 @@
 	{
 		// Reason: The license at https://github.com/aadsm/jschardet/blob/master/LICENSE
 		// does not include a clear Copyright statement and does not credit authors.
+		//test
 		"name": "jschardet",
 		"prependLicenseText": [
 			"Chardet was originally ported from C++ by Mark Pilgrim. It is now maintained",
